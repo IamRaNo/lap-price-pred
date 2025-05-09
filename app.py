@@ -3,8 +3,8 @@ import pickle
 import pandas as pd
 import streamlit as st
 
-model = pickle.load(open('model.pkl', 'rb'))
-data = pickle.load(open('data.pkl', 'rb'))
+model = pickle.load(open('/workspaces/lap-price-pred/model.pkl', 'rb'))
+data = pickle.load(open('/workspaces/lap-price-pred/data.pkl', 'rb'))
 st.title('Laptop Price Predictor')
 
 company = st.selectbox('Company', data['company'].unique())
